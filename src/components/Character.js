@@ -9,8 +9,8 @@ import styled from "styled-components"
 
     return (
 
-        <div className= "characterbox">
-            <div className="characterborder">
+        <div className= "characterbox"> 
+            <div className="characterborder"> 
                 <h3>{data.name}</h3>
                 <img className="charimg" src={data.image}/>
                  <p className="charstat">{data.status}</p>
