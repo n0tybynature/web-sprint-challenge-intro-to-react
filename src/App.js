@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Character from "./components/Character"
+import CharacterList from "./components/CharacterList"
 
 const App = () => {
   
@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
 
-      <Character />
+      <CharacterList />
     </div>
   );
 }
