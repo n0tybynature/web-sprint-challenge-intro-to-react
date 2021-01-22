@@ -18,8 +18,8 @@ const Status = styled.p`
 
 font-size:13pt;
 
-color:${(pr) => pr.satan}
-
+color:${(pr) => pr.satan};
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px ${(pr) => pr.satan}, 0 0 40px ${(pr) => pr.satan}, 0 0 50px ${(pr) => pr.satan}, 0 0 60px ${(pr) => pr.satan}, 0 0 70px ${(pr) => pr.satan};
 
 `
 
@@ -38,7 +38,7 @@ color:${(pr) => pr.satan}
         } else if( info === "Dead" ){
             return "red"
         } else {
-            return "yellow"
+            return "orange"
         }
     }
 
@@ -49,7 +49,7 @@ color:${(pr) => pr.satan}
             <div className="characterborder"> 
                 <CharName>{data.name}</CharName>
                 <img className="charimg" src={data.image}/>
-                <h3><Status satan={getStatus(data.status)}>{data.status}</Status></h3>
+                <h3><Status satan={getStatus(data.status)}>{data.status === "unknown" ? 'Unknown' : data.status}</Status></h3>
                  <p className="charloc">{data.location.name}</p>
                  <p className="charspec">{data.species}</p>
 
