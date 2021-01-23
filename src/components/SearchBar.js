@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Searchstyle = styled.input `
 
     background-color: rgb(245, 234, 86);
-    outline: 0;
+    border: 1px rgb(245, 234, 86) solid;
 
 `
 const Formstyle = styled.form`
