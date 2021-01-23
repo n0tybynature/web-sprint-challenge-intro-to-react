@@ -27,6 +27,16 @@ text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px ${(pr) => pr.satan}, 0 0 40p
 
 
 `
+const Loc = styled.span`
+
+font-size: 9pt;
+color:gray;
+
+
+`
+
+
+
 
 
 
@@ -55,8 +65,10 @@ text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px ${(pr) => pr.satan}, 0 0 40p
                 <CharName>{data.name}</CharName>
                 <img className="charimg" src={data.image}/>
                 <h3><Status satan={getStatus(data.status)}>{data.status === "unknown" ? 'Unknown' : data.status}</Status></h3>
+                
+                <p className="charspec"><b>Species: </b>{data.species}</p>
+                <Loc>Last known Location:</Loc>
                  <p className="charloc">{data.location.name}</p>
-                 <p className="charspec">{data.species}</p>
 
               
 
