@@ -19,7 +19,12 @@ const Status = styled.p`
 font-size:13pt;
 
 color:${(pr) => pr.satan};
+
+
+
 text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px ${(pr) => pr.satan}, 0 0 40px ${(pr) => pr.satan}, 0 0 50px ${(pr) => pr.satan}, 0 0 60px ${(pr) => pr.satan}, 0 0 70px ${(pr) => pr.satan};
+
+
 
 `
 

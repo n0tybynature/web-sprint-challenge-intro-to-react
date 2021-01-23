@@ -5,5 +5,7 @@ body {
   background-image: linear-gradient(
     rgb(103, 255, 255), white,rgb(245, 234, 86)
   );
- 
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }

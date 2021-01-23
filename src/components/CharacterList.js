@@ -9,10 +9,14 @@ export default function CharacterList (props){
 
 
     const [info, setInfo] = useState([]);
+    const {link} = props;
+
+
+
 
     useEffect(() => {
     
-            axios.get('https://rickandmortyapi.com/api/character')
+            axios.get(`${link}`)
             .then( (res) => {
                 console.log(res)
                 setInfo(res.data.results)
@@ -22,7 +26,7 @@ export default function CharacterList (props){
             })
        
         
-    },[])
+    },[link])
 
     return (
 
@@ -32,7 +36,7 @@ export default function CharacterList (props){
             {
                
                 info.map( person => {
-                    return <Character data={person}/>
+                    return <Character data={person} key={person.id}/>
                 })
 
             }
