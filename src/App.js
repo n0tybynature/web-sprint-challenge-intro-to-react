@@ -3,6 +3,12 @@ import './App.css';
 import CharacterList from "./components/CharacterList"
 import SearchBar from "./components/SearchBar"
 
+
+
+
+
+
+
 const App = () => {
   
   const [url, setUrl] = useState('https://rickandmortyapi.com/api/character')
